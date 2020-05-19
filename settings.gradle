@@ -1,1 +1,4 @@
 include ':app'
+include ':cpage'
+include ':cpage-annotation'
+include ':app-lib'
