@@ -21,25 +21,14 @@ android {
         abortOnError false
     }
 
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
-    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    api 'com.github.bumptech.glide:glide:4.11.0'
+    //api 'com.github.bumptech.glide:glide:4.11.0'
     //ButterKnife
     api deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
-
-   /* api deps.support.app_compat
-    api deps.support.design
-    api deps.support.recyclerview
-    api deps.support.v4
-    api deps.support.cardview*/
 
 }

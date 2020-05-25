@@ -1,6 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     compileSdkVersion build_versions.target_sdk
     buildToolsVersion build_versions.build_tools
 
@@ -10,7 +16,6 @@ android {
         targetSdkVersion build_versions.target_sdk
         versionCode project.VERSION_CODE as int
         versionName project.VERSION_NAME
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
         release {
@@ -19,20 +24,21 @@ android {
         }
     }
 
-    repositories {
+
+
+    /*repositories {
         flatDir {
             dirs 'libs', '../app-lib/libs' //我的aar在youkuPlayer Module下
         }
-    }
+    }*/
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation project(path: ':app-base')
 
-
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0'
-    implementation 'com.google.android.material:material:1.1.0-beta01'
+    //implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha03'
 
 }

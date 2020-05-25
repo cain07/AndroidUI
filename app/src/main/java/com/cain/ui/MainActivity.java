@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
     }
 
     private void initViews() {
-        //initTab();
+        initTab();
 
         //静默检查版本更新
         //Utils.checkUpdate(this, false);

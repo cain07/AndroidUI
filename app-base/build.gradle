@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         minSdkVersion build_versions.min_sdk
-        targetSdkVersion build_versions.target_sdk
+
     }
 
     buildTypes {
