@@ -19,12 +19,20 @@ android {
         }
     }
 
-
+    repositories {
+        flatDir {
+            dirs 'libs', '../app-lib/libs' //我的aar在youkuPlayer Module下
+        }
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation project(path: ':app-lib')
+    implementation project(path: ':app-base')
 
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0-beta01'
 
 }
