@@ -41,4 +41,8 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.0-alpha06'
     implementation 'androidx.appcompat:appcompat:1.2.0-alpha03'
 
+
+    //ButterKnife
+    annotationProcessor deps.butterknife.compiler
+
 }
