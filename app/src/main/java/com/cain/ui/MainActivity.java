@@ -5,18 +5,20 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import com.cain.base.base.BaseActivity;
 import com.google.android.material.tabs.TabLayout;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
 
     private LinearLayout mLLMenu;
     private String[] mMenuTitles;
     private Drawable[] mMenuIcons;
 
-    @BindView(R.id.tabs)
+    @BindView(R.id.tabs_bottom)
     TabLayout mTabLayout;
 
     @Override
