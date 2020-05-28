@@ -1,3 +1,4 @@
 include ':app'
 include ':app-lib'
 include ':app-base'
+include ':app-util'
