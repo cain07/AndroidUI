@@ -17,7 +17,7 @@
         android:id="@+id/tabs_bottom"
         style="@style/TabLayoutStyle"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="60dp"
         android:background="@drawable/xui_list_item_bg_with_border_top"
         app:tabGravity="fill"
         app:tabIndicatorColor="@android:color/transparent"
