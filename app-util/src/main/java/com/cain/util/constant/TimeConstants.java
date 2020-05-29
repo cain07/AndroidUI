@@ -25,7 +25,6 @@ import java.lang.annotation.Target;
 
 /**
  * 时间相关常量
- * @author xuexiang
  * @date 2018/2/16 下午3:22
  */
 public final class TimeConstants {

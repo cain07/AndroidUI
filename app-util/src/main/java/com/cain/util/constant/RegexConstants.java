@@ -19,7 +19,6 @@ package com.xuexiang.constant;
 /**
  * 正则表达式常量
  *
- * @author xuexiang
  * @since 2018/6/27 下午2:27
  */
 public final class RegexConstants {

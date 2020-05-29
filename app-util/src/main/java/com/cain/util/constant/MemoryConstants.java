@@ -23,8 +23,6 @@ import java.lang.annotation.RetentionPolicy;
 
 /**
  * 存储相关常量
- * @author xuexiang
- * @date 2018/2/20 下午4:33
  */
 public final class MemoryConstants {
 

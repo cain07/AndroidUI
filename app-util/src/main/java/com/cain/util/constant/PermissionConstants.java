@@ -28,7 +28,6 @@ import java.lang.annotation.RetentionPolicy;
 /**
  * 权限相关常量
  *
- * @author xuexiang
  * @date 2018/2/15 下午1:45
  */
 @SuppressLint("InlinedApi")

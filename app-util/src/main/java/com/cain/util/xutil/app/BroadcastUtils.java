@@ -31,7 +31,6 @@ import java.util.Map;
 /**
  * <pre>
  *     desc   : 广播工具类
- *     author : xuexiang
  *     time   : 2018/4/28 上午12:26
  * </pre>
  */

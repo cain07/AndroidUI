@@ -1,0 +1,5 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cain.util.sub" >
+
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+</manifest>

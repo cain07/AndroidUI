@@ -57,7 +57,6 @@ import static android.Manifest.permission.REQUEST_INSTALL_PACKAGES;
 /**
  * <pre>
  *     desc   : App 相关工具类
- *     author : xuexiang
  *     time   : 2018/4/28 上午12:26
  * </pre>
  */
