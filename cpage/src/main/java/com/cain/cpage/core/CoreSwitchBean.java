@@ -9,7 +9,6 @@ import com.cain.cpage.PageConfig;
 import com.cain.cpage.R;
 import com.cain.cpage.base.CPageActivity;
 import com.cain.cpage.base.CPageFragment;
-import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.model.PageInfo;
 
 import java.util.Arrays;

@@ -18,7 +18,6 @@ import com.cain.cpage.core.CoreConfig;
 import com.cain.cpage.core.CoreSwitchBean;
 import com.cain.cpage.core.CoreSwitcher;
 import com.cain.cpage.core.PageOption;
-import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.logger.PageLog;
 import com.cain.cpage.utils.TitleBar;
 import com.cain.cpage.utils.TitleUtils;

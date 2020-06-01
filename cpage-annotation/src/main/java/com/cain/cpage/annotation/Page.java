@@ -1,7 +1,6 @@
 package com.cain.cpage.annotation;
 
 
-
 import com.cain.cpage.enums.CoreAnim;
 
 import java.lang.annotation.ElementType;

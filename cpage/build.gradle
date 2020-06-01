@@ -24,7 +24,14 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    //implementation project(path: ':cpage-annotation')
+
+    //api deps.support.app_compat
+    //api deps.support.annotations
+
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    implementation 'androidx.appcompat:appcompat:1.2.0-alpha03'
+
+    api project(path: ':cpage-annotation')
     //butterKnife的sdk
     implementation deps.butterknife.runtime
     annotationProcessor deps.butterknife.compiler
