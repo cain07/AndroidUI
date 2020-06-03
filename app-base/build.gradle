@@ -25,4 +25,7 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     api project(path: ':app-lib')
+
+    api project(path: ':cpage')
+    api project(path: ':xui_lib')
 }

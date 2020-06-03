@@ -6,10 +6,6 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Parcelable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
@@ -17,11 +13,17 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout.LayoutParams;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import com.cain.cpage.PageConfig;
 import com.cain.cpage.R;
 import com.cain.cpage.core.CorePageManager;
 import com.cain.cpage.core.CoreSwitchBean;
 import com.cain.cpage.core.CoreSwitcher;
+import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.logger.PageLog;
 import com.cain.cpage.utils.Utils;
 

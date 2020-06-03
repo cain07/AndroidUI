@@ -1,6 +1,6 @@
 package com.cain.cpage.core;
 
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 
 import com.cain.cpage.base.CPageFragment;
 

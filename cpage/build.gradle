@@ -28,8 +28,9 @@ dependencies {
     //api deps.support.app_compat
     //api deps.support.annotations
 
-    implementation 'com.google.android.material:material:1.2.0-alpha06'
-    implementation 'androidx.appcompat:appcompat:1.2.0-alpha03'
+    api 'com.google.android.material:material:1.2.0-alpha06'
+    api 'androidx.appcompat:appcompat:1.2.0-alpha03'
+    api 'androidx.annotation:annotation:1.2.0-alpha01'
 
     api project(path: ':cpage-annotation')
     //butterKnife的sdk

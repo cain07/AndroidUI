@@ -2,12 +2,15 @@ package com.cain.cpage.core;
 
 import android.os.Bundle;
 import android.os.Parcelable;
-import android.support.annotation.;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
+
+import com.cain.cpage.PageConfig;
 import com.cain.cpage.base.CPageActivity;
 import com.cain.cpage.base.CPageFragment;
+import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.model.PageInfo;
 import com.cain.cpage.utils.Utils;
 

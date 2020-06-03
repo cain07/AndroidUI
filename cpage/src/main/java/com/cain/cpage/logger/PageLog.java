@@ -16,9 +16,10 @@
 
 package com.cain.cpage.logger;
 
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
 
 /**
  * Logger日志记录

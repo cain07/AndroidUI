@@ -2,8 +2,9 @@ package com.cain.cpage;
 
 import android.app.Application;
 import android.content.Context;
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import com.cain.cpage.annotation.Page;
 import com.cain.cpage.base.CPageActivity;

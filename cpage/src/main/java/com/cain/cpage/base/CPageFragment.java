@@ -4,20 +4,22 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.LayoutRes;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.fragment.app.Fragment;
 
 import com.cain.cpage.PageConfig;
 import com.cain.cpage.core.CoreConfig;
 import com.cain.cpage.core.CoreSwitchBean;
 import com.cain.cpage.core.CoreSwitcher;
 import com.cain.cpage.core.PageOption;
+import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.logger.PageLog;
 import com.cain.cpage.utils.TitleBar;
 import com.cain.cpage.utils.TitleUtils;

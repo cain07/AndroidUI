@@ -3,12 +3,14 @@ package com.cain.cpage.core;
 import android.os.Bundle;
 import android.os.Parcel;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.cain.cpage.PageConfig;
 import com.cain.cpage.R;
 import com.cain.cpage.base.CPageActivity;
 import com.cain.cpage.base.CPageFragment;
+import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.model.PageInfo;
 
 import java.util.Arrays;
@@ -79,6 +81,9 @@ public class CoreSwitchBean implements Parcelable{
         mBundle = bundle;
         setAnim(coreAnim);
     }
+
+
+
 
     /**
      * 动画转化，根据枚举类返回int数组

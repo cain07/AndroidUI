@@ -1,15 +1,14 @@
 package com.cain.ui;
 
-import android.app.Activity;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
 import com.cain.base.base.BaseActivity;
+import com.cain.ui.fragment.ComponentsFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
 
 
 public class MainActivity extends BaseActivity {
@@ -34,7 +33,6 @@ public class MainActivity extends BaseActivity {
 
     private void initViews() {
         initTab();
-
         //静默检查版本更新
         //Utils.checkUpdate(this, false);
     }
@@ -57,13 +55,13 @@ public class MainActivity extends BaseActivity {
         expand.setText("拓展");
         expand.setIcon(R.drawable.selector_icon_tabbar_expand);
         mTabLayout.addTab(expand);
-/*
+
         switchPage(ComponentsFragment.class);
 
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-                mAdapter.setSelected(tab.getPosition());
+               /* mAdapter.setSelected(tab.getPosition());
                 switch (tab.getPosition()) {
                     case POS_COMPONENTS:
                         switchPage(ComponentsFragment.class);
@@ -76,7 +74,7 @@ public class MainActivity extends BaseActivity {
                         break;
                     default:
                         break;
-                }
+                }*/
             }
 
             @Override
@@ -87,7 +85,7 @@ public class MainActivity extends BaseActivity {
             public void onTabReselected(TabLayout.Tab tab) {
 
             }
-        });*/
+        });
     }
 
 
