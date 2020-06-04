@@ -6,12 +6,20 @@ import android.widget.LinearLayout;
 
 import com.cain.base.base.BaseActivity;
 import com.cain.ui.fragment.ComponentsFragment;
+import com.cain.ui.fragment.ExpandsFragment;
+import com.cain.ui.fragment.UtilitysFragment;
 import com.google.android.material.tabs.TabLayout;
 
 import butterknife.BindView;
 
 
 public class MainActivity extends BaseActivity {
+
+    private static final int POS_COMPONENTS = 0;
+    private static final int POS_UTILITYS = 1;
+    private static final int POS_EXPANDS = 2;
+    private static final int POS_ABOUT = 3;
+    private static final int POS_LOGOUT = 5;
 
     private LinearLayout mLLMenu;
     private String[] mMenuTitles;
@@ -61,7 +69,6 @@ public class MainActivity extends BaseActivity {
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
-               /* mAdapter.setSelected(tab.getPosition());
                 switch (tab.getPosition()) {
                     case POS_COMPONENTS:
                         switchPage(ComponentsFragment.class);
@@ -74,7 +81,7 @@ public class MainActivity extends BaseActivity {
                         break;
                     default:
                         break;
-                }*/
+                }
             }
 
             @Override

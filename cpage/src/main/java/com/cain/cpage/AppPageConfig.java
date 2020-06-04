@@ -115,8 +115,8 @@ public class AppPageConfig {
     mPages.add(new PageInfo("双列表自定义样式", "com.xuexiang.xuidemo.fragment.expands.linkage.LinkageRecyclerViewCustomFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mExpands.add(new PageInfo("双列表联动", "com.xuexiang.xuidemo.fragment.expands.LinkageRecyclerViewFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230908));
     mPages.add(new PageInfo("双列表联动", "com.xuexiang.xuidemo.fragment.expands.LinkageRecyclerViewFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230908));
-    mPages.add(new PageInfo("拓展", "com.xuexiang.xuidemo.fragment.ExpandsFragment", "{\"\":\"\"}", CoreAnim.none, -1));
-    mPages.add(new PageInfo("组件", "com.xuexiang.xuidemo.fragment.ComponentsFragment", "{\"\":\"\"}", CoreAnim.none, -1));
+    mPages.add(new PageInfo("拓展", "com.cain.ui.fragment.fragment.ExpandsFragment", "{\"\":\"\"}", CoreAnim.none, -1));
+    mPages.add(new PageInfo("组件", "com.cain.ui.fragment.ComponentsFragment", "{\"\":\"\"}", CoreAnim.none, -1));
     mUtils.add(new PageInfo("DrawableUtils", "com.xuexiang.xuidemo.fragment.utils.DrawableUtilsFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230977));
     mPages.add(new PageInfo("DrawableUtils", "com.xuexiang.xuidemo.fragment.utils.DrawableUtilsFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230977));
     mUtils.add(new PageInfo("ViewUtils", "com.xuexiang.xuidemo.fragment.utils.ViewUtilsFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230980));
@@ -339,7 +339,7 @@ public class AppPageConfig {
     mPages.add(new PageInfo("扫码关注", "com.xuexiang.xuidemo.fragment.QRCodeFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("关于", "com.xuexiang.xuidemo.fragment.AboutFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("设置", "com.xuexiang.xuidemo.fragment.SettingFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
-    mPages.add(new PageInfo("工具", "com.xuexiang.xuidemo.fragment.UtilitysFragment", "{\"\":\"\"}", CoreAnim.none, -1));
+    mPages.add(new PageInfo("工具", "com.cain.ui.fragment.UtilitysFragment", "{\"\":\"\"}", CoreAnim.none, -1));
     mPages.add(new PageInfo("组件搜索", "com.xuexiang.xuidemo.fragment.SearchComponentFragment", "{\"\":\"\"}", CoreAnim.slide, -1));
     mPages.add(new PageInfo("XPageWebViewFragment", "com.xuexiang.xuidemo.base.webview.XPageWebViewFragment", "{\"com.xuexiang.xuidemo.base.webview.key_url\":\"\"}", CoreAnim.slide, -1));
   }
