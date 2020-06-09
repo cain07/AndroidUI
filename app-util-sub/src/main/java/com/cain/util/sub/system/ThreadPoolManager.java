@@ -16,6 +16,8 @@
 
 package com.cain.util.sub.system;
 
+import com.cain.util.xutil.system.ThreadPoolUtils;
+
 import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.Callable;
@@ -25,7 +27,8 @@ import java.util.concurrent.ScheduledFuture;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
 
-import static com.xuexiang.xutil.system.ThreadPoolUtils.FixedThread;
+import static com.cain.util.xutil.system.ThreadPoolUtils.FixedThread;
+
 
 /**
  * <pre>

@@ -25,11 +25,12 @@ import android.content.res.Resources;
 import android.media.AudioManager;
 import android.os.Build;
 import android.provider.Settings;
-import android.support.annotation.RequiresPermission;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.xuexiang.xutil.common.StringUtils;
+import androidx.annotation.RequiresPermission;
+
+import com.cain.util.xutil.common.StringUtils;
 
 import static android.Manifest.permission.WRITE_APN_SETTINGS;
 import static android.Manifest.permission.WRITE_SETTINGS;

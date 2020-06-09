@@ -30,12 +30,13 @@ import android.content.pm.ResolveInfo;
 import android.os.Build;
 import android.os.Process;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.annotation.RequiresPermission;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.logger.Logger;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.RequiresPermission;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.logger.Logger;
 
 import java.util.Arrays;
 import java.util.Collections;

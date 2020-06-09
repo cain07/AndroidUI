@@ -22,8 +22,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.logger.Logger;
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.logger.Logger;
 
 import java.util.Collections;
 import java.util.HashSet;

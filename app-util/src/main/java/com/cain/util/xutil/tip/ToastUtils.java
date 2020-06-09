@@ -22,9 +22,10 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.xuexiang.xutil.R;
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.resource.ResUtils;
+import com.cain.util.R;
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.resource.ResUtils;
+
 
 /**
  * <pre>

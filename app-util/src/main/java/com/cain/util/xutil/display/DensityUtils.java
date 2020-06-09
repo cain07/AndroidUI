@@ -22,7 +22,8 @@ import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.xuexiang.xutil.XUtil;
+import com.cain.util.xutil.XUtil;
+
 
 /**
  * <pre>

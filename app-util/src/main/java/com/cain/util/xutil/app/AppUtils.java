@@ -32,18 +32,19 @@ import android.content.pm.Signature;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.annotation.RequiresPermission;
 import android.text.TextUtils;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.ShellUtils;
-import com.xuexiang.xutil.common.logger.Logger;
-import com.xuexiang.xutil.file.CleanUtils;
-import com.xuexiang.xutil.file.FileUtils;
-import com.xuexiang.xutil.security.EncryptUtils;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.RequiresPermission;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.ShellUtils;
+import com.cain.util.xutil.common.logger.Logger;
+import com.cain.util.xutil.file.CleanUtils;
+import com.cain.util.xutil.file.FileUtils;
+import com.cain.util.xutil.security.EncryptUtils;
 
 import java.io.File;
 import java.util.ArrayList;

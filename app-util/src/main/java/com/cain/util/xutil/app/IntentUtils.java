@@ -24,13 +24,14 @@ import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.provider.MediaStore;
-import android.support.annotation.NonNull;
-import android.support.annotation.StringDef;
-import android.support.v4.content.FileProvider;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.StringUtils;
-import com.xuexiang.xutil.file.FileUtils;
+import androidx.annotation.NonNull;
+import androidx.annotation.StringDef;
+import androidx.core.content.FileProvider;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.file.FileUtils;
 
 import java.io.File;
 import java.io.Serializable;
@@ -38,11 +39,6 @@ import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
-
-import static com.xuexiang.xutil.app.IntentUtils.DocumentType.ANY;
-import static com.xuexiang.xutil.app.IntentUtils.DocumentType.AUDIO;
-import static com.xuexiang.xutil.app.IntentUtils.DocumentType.IMAGE;
-import static com.xuexiang.xutil.app.IntentUtils.DocumentType.VIDEO;
 
 /**
  * <pre>

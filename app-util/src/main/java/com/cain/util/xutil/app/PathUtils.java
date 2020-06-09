@@ -28,14 +28,15 @@ import android.os.Environment;
 import android.os.storage.StorageManager;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresApi;
-import android.support.v4.content.FileProvider;
 import android.text.TextUtils;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.StringUtils;
-import com.xuexiang.xutil.common.logger.Logger;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.core.content.FileProvider;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.common.logger.Logger;
 
 import java.io.File;
 import java.lang.reflect.Array;

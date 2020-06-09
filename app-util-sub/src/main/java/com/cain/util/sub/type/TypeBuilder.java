@@ -16,8 +16,9 @@
 
 package com.cain.util.sub.type;
 
-import com.xuexiang.xutil.net.type.impl.ParameterizedTypeImpl;
-import com.xuexiang.xutil.net.type.impl.WildcardTypeImpl;
+
+import com.cain.util.sub.type.impl.ParameterizedTypeImpl;
+import com.cain.util.sub.type.impl.WildcardTypeImpl;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;

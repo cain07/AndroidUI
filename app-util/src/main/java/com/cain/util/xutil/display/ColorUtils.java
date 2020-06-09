@@ -18,11 +18,12 @@ package com.cain.util.xutil.display;
 
 import android.content.res.ColorStateList;
 import android.graphics.Color;
-import android.support.annotation.ColorInt;
-import android.support.annotation.ColorRes;
-import android.support.annotation.NonNull;
 
-import com.xuexiang.xutil.resource.ResUtils;
+import androidx.annotation.ColorInt;
+import androidx.annotation.ColorRes;
+import androidx.annotation.NonNull;
+
+import com.cain.util.xutil.resource.ResUtils;
 
 import java.util.Random;
 

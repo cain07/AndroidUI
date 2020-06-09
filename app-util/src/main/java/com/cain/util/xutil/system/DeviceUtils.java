@@ -26,13 +26,14 @@ import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.PowerManager;
 import android.provider.Settings;
-import android.support.annotation.RequiresPermission;
 import android.telephony.TelephonyManager;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.app.AppUtils;
-import com.xuexiang.xutil.common.ShellUtils;
-import com.xuexiang.xutil.common.StringUtils;
+import androidx.annotation.RequiresPermission;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.app.AppUtils;
+import com.cain.util.xutil.common.ShellUtils;
+import com.cain.util.xutil.common.StringUtils;
 
 import java.io.File;
 import java.lang.reflect.Field;

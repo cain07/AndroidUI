@@ -16,7 +16,8 @@
 
 package com.cain.util.xutil.data;
 
-import com.xuexiang.xutil.common.StringUtils;
+
+import com.cain.util.xutil.common.StringUtils;
 
 import java.util.Locale;
 

@@ -26,15 +26,16 @@ import android.os.Environment;
 import android.os.ParcelFileDescriptor;
 import android.provider.DocumentsContract;
 import android.provider.MediaStore;
-import android.support.annotation.RequiresApi;
-import android.support.annotation.StringDef;
 
+import androidx.annotation.RequiresApi;
+import androidx.annotation.StringDef;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.logger.Logger;
+import com.cain.util.xutil.display.ImageUtils;
+import com.cain.util.xutil.file.FileIOUtils;
+import com.cain.util.xutil.file.FileUtils;
 import com.xuexiang.constant.MimeTypeConstants;
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.logger.Logger;
-import com.xuexiang.xutil.display.ImageUtils;
-import com.xuexiang.xutil.file.FileIOUtils;
-import com.xuexiang.xutil.file.FileUtils;
 
 import java.io.File;
 import java.io.FileNotFoundException;

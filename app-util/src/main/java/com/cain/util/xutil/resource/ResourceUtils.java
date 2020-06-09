@@ -19,14 +19,15 @@ import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
 
-import com.xuexiang.xutil.common.StringUtils;
-import com.xuexiang.xutil.common.logger.Logger;
-import com.xuexiang.xutil.display.ImageUtils;
-import com.xuexiang.xutil.file.CloseUtils;
-import com.xuexiang.xutil.file.FileIOUtils;
-import com.xuexiang.xutil.file.FileUtils;
+import androidx.annotation.Nullable;
+
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.common.logger.Logger;
+import com.cain.util.xutil.display.ImageUtils;
+import com.cain.util.xutil.file.CloseUtils;
+import com.cain.util.xutil.file.FileIOUtils;
+import com.cain.util.xutil.file.FileUtils;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -34,7 +35,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 
-import static com.xuexiang.xutil.common.StringUtils.EMPTY;
+import static com.cain.util.xutil.common.StringUtils.EMPTY;
+
 
 /**
  * <pre>

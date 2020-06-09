@@ -28,4 +28,8 @@ dependencies {
 
     api project(path: ':cpage')
     api project(path: ':xui_lib')
+    api project(path: ':app-util-sub')
+    api project(path: ':easypermissionlib')
+
+
 }

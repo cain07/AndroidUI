@@ -20,10 +20,10 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.StringUtils;
-import com.xuexiang.xutil.net.JsonUtil;
-import com.xuexiang.xutil.security.Base64Utils;
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.net.JsonUtil;
+import com.cain.util.xutil.security.Base64Utils;
 
 import java.lang.reflect.Type;
 import java.util.Map;

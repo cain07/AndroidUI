@@ -26,17 +26,19 @@ import android.graphics.Bitmap;
 import android.graphics.Point;
 import android.os.Build;
 import android.provider.Settings;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
 import android.util.DisplayMetrics;
 import android.view.Surface;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.logger.Logger;
-import com.xuexiang.xutil.resource.ResUtils;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.logger.Logger;
+import com.cain.util.xutil.resource.ResUtils;
+
 
 /**
  * <pre>

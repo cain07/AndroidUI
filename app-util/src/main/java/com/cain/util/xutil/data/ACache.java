@@ -25,11 +25,12 @@ import android.graphics.drawable.Drawable;
 import android.os.Parcel;
 import android.os.Parcelable;
 import android.os.Process;
-import android.support.annotation.NonNull;
-import android.support.v4.util.SimpleArrayMap;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.file.CloseUtils;
+import androidx.annotation.NonNull;
+import androidx.collection.SimpleArrayMap;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.file.CloseUtils;
 
 import org.json.JSONArray;
 import org.json.JSONObject;

@@ -21,7 +21,7 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.os.CountDownTimer;
 
-import com.xuexiang.xutil.system.ThreadPoolManager;
+import com.cain.util.sub.system.ThreadPoolManager;
 
 import java.util.ArrayList;
 import java.util.List;

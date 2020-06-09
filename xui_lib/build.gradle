@@ -6,7 +6,7 @@ android {
     buildToolsVersion build_versions.build_tools
 
     defaultConfig {
-        minSdkVersion 17
+        minSdkVersion build_versions.min_sdk
         targetSdkVersion build_versions.target_sdk
 
         vectorDrawables.useSupportLibrary = true

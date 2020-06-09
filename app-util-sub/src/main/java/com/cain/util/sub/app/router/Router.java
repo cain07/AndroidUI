@@ -21,11 +21,13 @@ import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.ActivityOptionsCompat;
 
-import com.xuexiang.xutil.app.IntentUtils;
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.ActivityOptionsCompat;
+
+import com.cain.util.xutil.app.IntentUtils;
+
 
 /**
  * <pre>
@@ -36,14 +38,14 @@ import com.xuexiang.xutil.app.IntentUtils;
  */
 public class Router {
     // #router
-    public static final int ROUTER_ANIM_ENTER = Router.RES_NONE;
+   /* public static final int ROUTER_ANIM_ENTER = Router.RES_NONE;
     public static final int ROUTER_ANIM_EXIT = Router.RES_NONE;
 
     private Intent intent;
     private Activity fromActivity;
 
     private Fragment fromFragment;
-    private android.support.v4.app.Fragment fromFragmentV4;
+    private Fragment fromFragmentV4;
 
     private Class<?> to;
     private Bundle data;
@@ -201,5 +203,5 @@ public class Router {
 
     public static void setCallback(RouterCallback callback) {
         Router.callback = callback;
-    }
+    }*/
 }

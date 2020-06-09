@@ -15,7 +15,9 @@
  */
 package com.cain.util.sub.common;
 
-import com.xuexiang.xutil.data.DateUtils;
+
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.data.DateUtils;
 
 import java.text.DateFormat;
 import java.text.ParseException;

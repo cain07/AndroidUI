@@ -18,7 +18,14 @@
             android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
-            android:text="ceshi" />
+            android:text="只检查权限和结果并显示它" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
 
         <Button
             android:id="@+id/btn_permission_2"

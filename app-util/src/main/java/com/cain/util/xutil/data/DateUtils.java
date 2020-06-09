@@ -17,11 +17,12 @@
 package com.cain.util.xutil.data;
 
 import android.annotation.SuppressLint;
-import android.support.annotation.Nullable;
 
+import androidx.annotation.Nullable;
+
+import com.cain.util.xutil.common.StringUtils;
 import com.xuexiang.constant.DateFormatConstants;
 import com.xuexiang.constant.TimeConstants;
-import com.xuexiang.xutil.common.StringUtils;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -32,9 +33,9 @@ import java.util.Locale;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import static com.cain.util.xutil.common.StringUtils.EMPTY;
 import static com.xuexiang.constant.TimeConstants.MIN;
 import static com.xuexiang.constant.TimeConstants.SEC;
-import static com.xuexiang.xutil.common.StringUtils.EMPTY;
 
 /**
  * <pre>

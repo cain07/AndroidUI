@@ -21,9 +21,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 
-import com.xuexiang.xutil.XUtil;
+import androidx.annotation.NonNull;
+
+import com.cain.util.xutil.XUtil;
 
 import java.util.List;
 import java.util.Map;

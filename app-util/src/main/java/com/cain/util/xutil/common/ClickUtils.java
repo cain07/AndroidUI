@@ -19,8 +19,8 @@ package com.cain.util.xutil.common;
 import android.os.SystemClock;
 import android.view.View;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.tip.ToastUtils;
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.tip.ToastUtils;
 
 import java.util.Timer;
 import java.util.TimerTask;

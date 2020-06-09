@@ -2,9 +2,12 @@ package com.cain.base.base;
 
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+
 import com.cain.cpage.base.CPageActivity;
 import com.cain.cpage.base.CPageFragment;
 import com.cain.cpage.core.CoreSwitchBean;
+import com.zyq.easypermission.EasyPermissionHelper;
 
 import butterknife.ButterKnife;
 import butterknife.Unbinder;
@@ -99,4 +102,11 @@ public class BaseActivity extends CPageActivity {
         super.onRelease();
     }
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        EasyPermissionHelper.getInstance().onRequestPermissionsResult(requestCode, permissions, grantResults, this);
+
+    }
 }

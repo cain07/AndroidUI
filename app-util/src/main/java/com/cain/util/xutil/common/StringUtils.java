@@ -16,7 +16,8 @@
 
 package com.cain.util.xutil.common;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;

@@ -20,10 +20,11 @@ package com.cain.util.xutil.app;
 import android.app.Activity;
 import android.app.Application;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 
-import com.xuexiang.xutil.common.StringUtils;
-import com.xuexiang.xutil.common.logger.Logger;
+import androidx.annotation.NonNull;
+
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.common.logger.Logger;
 
 import java.util.Iterator;
 import java.util.Stack;

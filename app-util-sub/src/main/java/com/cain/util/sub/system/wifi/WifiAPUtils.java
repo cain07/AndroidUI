@@ -20,7 +20,7 @@ import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiConfiguration.KeyMgmt;
 import android.net.wifi.WifiManager;
 
-import com.xuexiang.xutil.net.NetworkUtils;
+import com.cain.util.xutil.net.NetworkUtils;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

@@ -24,10 +24,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.StringUtils;
-import com.xuexiang.xutil.system.ThreadPoolManager;
-import com.xuexiang.xutil.tip.ToastUtils;
+import com.cain.util.sub.system.ThreadPoolManager;
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.tip.ToastUtils;
 
 import java.lang.reflect.Method;
 import java.util.ArrayList;

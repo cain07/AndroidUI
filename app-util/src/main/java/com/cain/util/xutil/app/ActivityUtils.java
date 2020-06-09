@@ -22,11 +22,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.logger.Logger;
+import androidx.annotation.NonNull;
+import androidx.fragment.app.Fragment;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.logger.Logger;
 
 import java.util.Map;
 

@@ -10,8 +10,13 @@ import java.util.List;
 
 @Page(name = "拓展", anim = CoreAnim.none)
 public class ExpandsFragment extends BaseHomeFragment {
+
     @Override
     protected List<PageInfo> getPageContents() {
         return AppPageConfig.getInstance().getExpands();
     }
+
+
+
+
 }

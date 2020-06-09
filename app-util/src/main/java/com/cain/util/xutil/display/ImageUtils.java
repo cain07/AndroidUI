@@ -43,19 +43,20 @@ import android.renderscript.Allocation;
 import android.renderscript.Element;
 import android.renderscript.RenderScript;
 import android.renderscript.ScriptIntrinsicBlur;
-import android.support.annotation.ColorInt;
-import android.support.annotation.DrawableRes;
-import android.support.annotation.FloatRange;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.widget.ImageView;
 
+import androidx.annotation.ColorInt;
+import androidx.annotation.DrawableRes;
+import androidx.annotation.FloatRange;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.core.content.ContextCompat;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.file.CloseUtils;
 import com.xuexiang.constant.MemoryConstants;
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.file.CloseUtils;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;

@@ -21,8 +21,12 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 
-import com.xuexiang.xutil.XUtil;
+import androidx.annotation.RequiresApi;
+
+import com.cain.util.xutil.XUtil;
+
 
 /**
  * <pre>
@@ -54,6 +58,7 @@ public final class ClipboardUtils {
      *
      * @return 剪贴板的文本
      */
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public static CharSequence getText() {
         ClipboardManager clipboard = (ClipboardManager) XUtil.getContext().getSystemService(Context.CLIPBOARD_SERVICE);
         if (clipboard != null) {
@@ -70,6 +75,7 @@ public final class ClipboardUtils {
      *
      * @param uri uri
      */
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public static void copyUri(final Uri uri) {
         ClipboardManager clipboard = (ClipboardManager) XUtil.getContext().getSystemService(Context.CLIPBOARD_SERVICE);
         if (clipboard != null) {
@@ -82,6 +88,7 @@ public final class ClipboardUtils {
      *
      * @return 剪贴板的uri
      */
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public static Uri getUri() {
         ClipboardManager clipboard = (ClipboardManager) XUtil.getContext().getSystemService(Context.CLIPBOARD_SERVICE);
         ClipData clip = clipboard.getPrimaryClip();
@@ -96,6 +103,7 @@ public final class ClipboardUtils {
      *
      * @param intent 意图
      */
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public static void copyIntent(final Intent intent) {
         ClipboardManager clipboard = (ClipboardManager) XUtil.getContext().getSystemService(Context.CLIPBOARD_SERVICE);
         if (clipboard != null) {
@@ -108,6 +116,7 @@ public final class ClipboardUtils {
      *
      * @return 剪贴板的意图
      */
+    @RequiresApi(api = Build.VERSION_CODES.HONEYCOMB)
     public static Intent getIntent() {
         ClipboardManager clipboard = (ClipboardManager) XUtil.getContext().getSystemService(Context.CLIPBOARD_SERVICE);
         if (clipboard != null) {

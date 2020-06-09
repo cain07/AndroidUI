@@ -21,11 +21,12 @@ import android.net.wifi.WifiManager;
 import android.os.Handler;
 import android.os.Looper;
 
-import com.xuexiang.xutil.common.StringUtils;
-import com.xuexiang.xutil.net.NetworkUtils;
-import com.xuexiang.xutil.system.ThreadPoolManager;
-import com.xuexiang.xutil.tip.ToastUtils;
-import com.xuexiang.xutil_sub.R;
+import com.cain.util.sub.R;
+import com.cain.util.sub.system.ThreadPoolManager;
+import com.cain.util.xutil.common.StringUtils;
+import com.cain.util.xutil.net.NetworkUtils;
+import com.cain.util.xutil.tip.ToastUtils;
+
 
 /**
  * <pre>

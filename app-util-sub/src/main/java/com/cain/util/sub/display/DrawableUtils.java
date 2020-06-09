@@ -23,6 +23,8 @@ import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
 import android.widget.TextView;
 
+import com.cain.util.xutil.display.ColorUtils;
+
 /**
  * Drawable生成工具类
  *

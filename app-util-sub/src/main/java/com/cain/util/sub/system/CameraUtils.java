@@ -21,11 +21,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.MediaStore;
-import android.support.v4.app.Fragment;
 import android.text.TextUtils;
 
-import com.xuexiang.xutil.app.PathUtils;
-import com.xuexiang.xutil.file.FileUtils;
+import androidx.fragment.app.Fragment;
+
+import com.cain.util.xutil.app.PathUtils;
+import com.cain.util.xutil.file.FileUtils;
 
 import java.io.File;
 import java.text.SimpleDateFormat;

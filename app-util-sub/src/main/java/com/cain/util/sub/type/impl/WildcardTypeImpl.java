@@ -16,7 +16,8 @@
 
 package com.cain.util.sub.type.impl;
 
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import java.lang.reflect.Type;
 import java.lang.reflect.WildcardType;

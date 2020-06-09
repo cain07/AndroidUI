@@ -16,9 +16,10 @@
 
 package com.cain.util.sub.type.impl;
 
-import android.support.annotation.NonNull;
 
-import com.xuexiang.xutil.net.type.TypeException;
+import androidx.annotation.NonNull;
+
+import com.cain.util.sub.type.TypeException;
 
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

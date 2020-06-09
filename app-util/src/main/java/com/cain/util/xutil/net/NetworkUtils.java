@@ -22,16 +22,18 @@ import android.content.Intent;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.net.NetworkInfo.State;
 import android.net.wifi.WifiManager;
-import android.support.annotation.Nullable;
-import android.support.annotation.RequiresPermission;
+import android.os.Build;
 import android.telephony.TelephonyManager;
 
-import com.xuexiang.xutil.XUtil;
-import com.xuexiang.xutil.common.ShellUtils;
-import com.xuexiang.xutil.common.logger.Logger;
-import com.xuexiang.xutil.file.CloseUtils;
+import androidx.annotation.Nullable;
+import androidx.annotation.RequiresApi;
+import androidx.annotation.RequiresPermission;
+
+import com.cain.util.xutil.XUtil;
+import com.cain.util.xutil.common.ShellUtils;
+import com.cain.util.xutil.common.logger.Logger;
+import com.cain.util.xutil.file.CloseUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -69,7 +71,6 @@ import static android.Manifest.permission.INTERNET;
  * </pre>
  */
 public final class NetworkUtils {
-
     /**
      * Don't let anyone instantiate this class.
      */
@@ -118,7 +119,7 @@ public final class NetworkUtils {
             NetworkInfo[] info = manager.getAllNetworkInfo();
             if (info != null) {
                 for (NetworkInfo anInfo : info) {
-                    if (anInfo.getState() == State.CONNECTED) {
+                    if (anInfo.getState() == NetworkInfo.State.CONNECTED) {
                         netState = true;
                         break;
                     }
@@ -143,7 +144,7 @@ public final class NetworkUtils {
             if (connectivity != null) {
                 NetworkInfo info = connectivity.getActiveNetworkInfo();
                 if (info != null && info.isConnected()) {
-                    if (info.getState() == State.CONNECTED) {
+                    if (info.getState() == NetworkInfo.State.CONNECTED) {
                         return true;
                     }
                 }
@@ -465,6 +466,7 @@ public final class NetworkUtils {
      * @param useIPv4 True to use ipv4, false otherwise.
      * @return the ip address
      */
+    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
     @RequiresPermission(INTERNET)
     public static String getIPAddress(final boolean useIPv4) {
         try {
@@ -473,8 +475,10 @@ public final class NetworkUtils {
             while (nis.hasMoreElements()) {
                 NetworkInterface ni = nis.nextElement();
                 // To prevent phone of xiaomi return "10.0.2.15"
-                if (!ni.isUp() || ni.isLoopback()) {
-                    continue;
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.GINGERBREAD) {
+                    if (!ni.isUp() || ni.isLoopback()) {
+                        continue;
+                    }
                 }
                 Enumeration<InetAddress> addresses = ni.getInetAddresses();
                 while (addresses.hasMoreElements()) {
@@ -600,13 +604,13 @@ public final class NetworkUtils {
      *
      * @return type of network
      * <ul>
-     * <li>{@link NetState#NET_WIFI   } </li>
-     * <li>{@link NetState#NET_5G     } </li>
-     * <li>{@link NetState#NET_4G     } </li>
-     * <li>{@link NetState#NET_3G     } </li>
-     * <li>{@link NetState#NET_2G     } </li>
-     * <li>{@link NetState#NET_UNKNOWN} </li>
-     * <li>{@link NetState#NET_NO     } </li>
+     * <li>{@link NetworkUtils.NetState#NET_WIFI   } </li>
+     * <li>{@link NetworkUtils.NetState#NET_5G     } </li>
+     * <li>{@link NetworkUtils.NetState#NET_4G     } </li>
+     * <li>{@link NetworkUtils.NetState#NET_3G     } </li>
+     * <li>{@link NetworkUtils.NetState#NET_2G     } </li>
+     * <li>{@link NetworkUtils.NetState#NET_UNKNOWN} </li>
+     * <li>{@link NetworkUtils.NetState#NET_NO     } </li>
      * </ul>
      */
     @RequiresPermission(ACCESS_NETWORK_STATE)
@@ -680,11 +684,11 @@ public final class NetworkUtils {
         if (info == null) {
             return false;
         }
-        State state = info.getState();
+        NetworkInfo.State state = info.getState();
         if (null == state) {
             return false;
         }
-        return state == State.CONNECTED || state == State.CONNECTING;
+        return state == NetworkInfo.State.CONNECTED || state == NetworkInfo.State.CONNECTING;
     }
 
     /**

@@ -16,7 +16,8 @@
 
 package com.cain.util.xutil.data;
 
-import com.xuexiang.xutil.file.CloseUtils;
+
+import com.cain.util.xutil.file.CloseUtils;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

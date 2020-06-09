@@ -268,4 +268,6 @@ public abstract class BaseFragment extends CPageFragment {
                 .setRequestCode(requestCode)
                 .open(this);
     }
+
+
 }

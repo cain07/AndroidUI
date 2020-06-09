@@ -58,6 +58,16 @@
             android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
             android:windowSoftInputMode="adjustPan|stateHidden" />
 
+        <activity
+            android:name=".activity.UtilsActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".activity.PermissionTestActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation|keyboard"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
 
     </application>
 

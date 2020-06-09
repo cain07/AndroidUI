@@ -24,14 +24,15 @@ import android.content.res.AssetManager;
 import android.content.res.Resources;
 import android.os.Handler;
 import android.os.Looper;
-import android.support.annotation.RequiresPermission;
 import android.text.TextUtils;
 
-import com.xuexiang.xutil.app.ActivityLifecycleHelper;
-import com.xuexiang.xutil.app.AppUtils;
-import com.xuexiang.xutil.app.ProcessUtils;
-import com.xuexiang.xutil.app.ServiceUtils;
-import com.xuexiang.xutil.common.logger.Logger;
+import androidx.annotation.RequiresPermission;
+
+import com.cain.util.xutil.app.ActivityLifecycleHelper;
+import com.cain.util.xutil.app.AppUtils;
+import com.cain.util.xutil.app.ProcessUtils;
+import com.cain.util.xutil.app.ServiceUtils;
+import com.cain.util.xutil.common.logger.Logger;
 
 import static android.Manifest.permission.KILL_BACKGROUND_PROCESSES;
 

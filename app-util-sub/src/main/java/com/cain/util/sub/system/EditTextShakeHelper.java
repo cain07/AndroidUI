@@ -23,7 +23,8 @@ import android.view.animation.CycleInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.EditText;
 
-import com.xuexiang.xutil.XUtil;
+import com.cain.util.xutil.XUtil;
+
 
 /**
  * <pre>

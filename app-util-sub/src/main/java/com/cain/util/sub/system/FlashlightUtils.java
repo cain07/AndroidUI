@@ -21,7 +21,7 @@ import android.graphics.SurfaceTexture;
 import android.hardware.Camera;
 import android.util.Log;
 
-import com.xuexiang.xutil.XUtil;
+import com.cain.util.xutil.XUtil;
 
 import java.io.IOException;
 
