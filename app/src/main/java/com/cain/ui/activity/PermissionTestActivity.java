@@ -158,14 +158,14 @@ public class PermissionTestActivity extends BaseActivity {
                     public void onPermissionsAccess(int requestCode) {
                         super.onPermissionsAccess(requestCode);
                         //做你想做的
-                        textView2.setText("权限已经获取 做你想做的");
+                        textView1.setText("权限已经获取 做你想做的");
                     }
 
                     @Override
                     public void onPermissionsDismiss(int requestCode, @NonNull List<String> permissions) {
                         super.onPermissionsDismiss(requestCode, permissions);
                         //你的权限被用户拒绝了你怎么办
-                        textView2.setText("你的权限被用户拒绝了你怎么办 you " + permissions.toString() + " is onPermissionsDismiss");
+                        textView1.setText("你的权限被用户拒绝了你怎么办 you " + permissions.toString() + " is onPermissionsDismiss");
                     }
                 }).requestPermission();
     }
@@ -185,7 +185,7 @@ public class PermissionTestActivity extends BaseActivity {
                     public void onPermissionsAccess(int requestCode) {
                         super.onPermissionsAccess(requestCode);
                         //做你想做的
-                        textView2.setText("do you something here");
+                        textView3.setText("do you something here");
                     }
 
                     @Override

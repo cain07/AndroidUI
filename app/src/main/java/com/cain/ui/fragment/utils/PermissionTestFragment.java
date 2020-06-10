@@ -58,7 +58,6 @@ public class PermissionTestFragment extends BaseFragment {
             }
         });
 
-
     }
 
 

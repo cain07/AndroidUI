@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import com.cain.cpage.base.CPageActivity;
 import com.cain.cpage.base.CPageFragment;
 import com.cain.cpage.core.CoreSwitchBean;
+import com.xuexiang.xui.widget.dialog.DialogLoader;
 import com.zyq.easypermission.EasyPermissionHelper;
 
 import butterknife.ButterKnife;
@@ -108,5 +109,6 @@ public class BaseActivity extends CPageActivity {
 
         EasyPermissionHelper.getInstance().onRequestPermissionsResult(requestCode, permissions, grantResults, this);
 
+        DialogLoader
     }
 }
