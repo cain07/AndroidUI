@@ -60,6 +60,7 @@ public class AppPageConfig {
    * @return
    */
   private void initComponents() {
+     mComponents.add(new PageInfo("环形", "com.xuexiang.xuidemo.fragment.components.ProgressBarFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230992));
      mComponents.add(new PageInfo("进度条", "com.xuexiang.xuidemo.fragment.components.ProgressBarFragment", "{\"\":\"\"}", CoreAnim.slide, 2131230992));
   }
 

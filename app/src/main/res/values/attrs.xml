@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <declare-styleable name="CountDownView">
+      <attr name="backgroundColor" format="color"/>
+      <attr name="roundColor" format="color" />
+      <attr name="roundProgressColor" format="color" />
+      <attr name="roundWidth" format="dimension" />
+      <attr name="text" format="string" />
+      <attr name="textSize" format="dimension"/>
+      <attr name="textColor" format="color" />
+      <attr name="countdownTime" format="integer"/>
+  </declare-styleable>
+
+    <!--圆圈进度-->
+    <declare-styleable name="CircleProgressbar">
+        <attr name="cpb_progress" format="float"/>
+        <attr name="cpb_maxProgress" format="float"/>
+        <attr name="cpb_backgroundProgressWidth" format="dimension"/>
+        <attr name="cpb_foregroundProgressWidth" format="dimension"/>
+        <attr name="cpb_backgroundProgressColor" format="color"/>
+        <attr name="cpb_foregroundProgressColor" format="color"/>
+        <attr name="cpb_roundedCorner" format="boolean"/>
+        <attr name="cpb_touchEnabled" format="boolean"/>
+        <attr name="cpb_clockwise" format="boolean"/>
+    </declare-styleable>
+
+    <!--人脸识别界面-->
+    <declare-styleable name="FaceView">
+        <!--文本-->
+        <attr name="tip_text" format="string"/>
+        <!--颜色-->
+        <attr name="tip_text_color" format="color"/>
+        <!--文字大小-->
+        <attr name="tip_text_size" format="dimension"/>
+    </declare-styleable>
+
+    <!--拍摄圆形view-->
+    <declare-styleable name="CircleCameraLayout">
+        <attr name="circle_camera_width" format="dimension" />
+        <attr name="circle_camera_height" format="dimension" />
+        <attr name="border_width" format="dimension" />
+    </declare-styleable>
+
+</resources>
+
+
+

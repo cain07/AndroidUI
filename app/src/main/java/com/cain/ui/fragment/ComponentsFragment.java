@@ -1,12 +1,13 @@
 package com.cain.ui.fragment;
 
-import android.os.Bundle;
-import android.util.Log;
+import android.content.Intent;
+import android.view.View;
 
 import com.cain.cpage.AppPageConfig;
 import com.cain.cpage.annotation.Page;
 import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.model.PageInfo;
+import com.cain.ui.activity.ComponentsActivity;
 import com.cain.ui.base.BaseHomeFragment;
 
 import java.util.List;
@@ -22,14 +23,16 @@ public class ComponentsFragment extends BaseHomeFragment {
 
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        Log.e("ComponentsFragment----","----onCreate----");
-    }
-
-    @Override
     protected List<PageInfo> getPageContents() {
         return AppPageConfig.getInstance().getComponents();
     }
 
+    @Override
+    public void onItemClick(View itemView, PageInfo widgetInfo, int pos) {
+
+
+        Intent intent = new Intent(getActivity(), ComponentsActivity.class);
+        intent.putExtra("item_index",pos);
+        startActivity(intent);
+    }
 }
