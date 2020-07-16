@@ -4,11 +4,9 @@ import android.content.Intent;
 import android.view.View;
 
 import com.cain.cpage.AppPageConfig;
-import com.cain.cpage.annotation.Page;
-import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.model.PageInfo;
 import com.cain.ui.activity.PermissionTestActivity;
-import com.cain.ui.base.BaseHomeFragment;
+import com.cain.ui.base.BaseMainFragment;
 
 import java.util.List;
 
@@ -18,8 +16,7 @@ import java.util.List;
   * @CreateDate:     2020/6/4 9:16 AM
   * @Version:        1.0
  */
-@Page(name = "工具", anim = CoreAnim.none)
-public class UtilitysFragment extends BaseHomeFragment {
+public class UtilitysFragment extends BaseMainFragment {
 
     @Override
     protected List<PageInfo> getPageContents() {
@@ -27,12 +24,12 @@ public class UtilitysFragment extends BaseHomeFragment {
     }
 
     @Override
-    public void onItemClick(View itemView, PageInfo widgetInfo, int pos) {
+    protected String getPageTitle() {
+        return "工具";
+    }
 
-        /*PermissionTestFragment fragment = new PermissionTestFragment();
-        FragmentTransaction fragmentTransaction = getFragmentManager().beginTransaction();
-        fragmentTransaction.replace(R.id.fragment_container,fragment);
-        fragmentTransaction.commit();*/
+    @Override
+    public void onItemClick(View itemView, PageInfo widgetInfo, int pos) {
 
         Intent intent = new Intent(getActivity(), PermissionTestActivity.class);
         startActivity(intent);

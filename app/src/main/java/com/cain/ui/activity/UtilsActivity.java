@@ -2,12 +2,12 @@ package com.cain.ui.activity;
 
 import android.os.Bundle;
 
-import com.cain.base.base.BaseActivity;
 import com.cain.ui.R;
+import com.cain.ui.base.BaseUIActivity;
 import com.cain.ui.fragment.utils.PermissionTestFragment;
 import com.cain.util.sub.app.FragmentUtils;
 
-public class UtilsActivity extends BaseActivity {
+public class UtilsActivity extends BaseUIActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

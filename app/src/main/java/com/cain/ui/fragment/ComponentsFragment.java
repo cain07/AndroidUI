@@ -4,12 +4,11 @@ import android.content.Intent;
 import android.view.View;
 
 import com.cain.cpage.AppPageConfig;
-import com.cain.cpage.annotation.Page;
-import com.cain.cpage.enums.CoreAnim;
 import com.cain.cpage.model.PageInfo;
 import com.cain.ui.activity.ComponentsActivity;
-import com.cain.ui.base.BaseHomeFragment;
+import com.cain.ui.base.BaseMainFragment;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -18,18 +17,26 @@ import java.util.List;
   * @CreateDate:     2020/6/3 2:05 PM
   * @Version:        1.0
  */
-@Page(name = "组件", anim = CoreAnim.none)
-public class ComponentsFragment extends BaseHomeFragment {
+public class ComponentsFragment extends BaseMainFragment {
 
+    private static List<PageInfo> pageInfos = new ArrayList<>();
 
+    static  {
+        pageInfos.add(new PageInfo("环形",""));
+        pageInfos.add(new PageInfo("进度条",""));
+    }
     @Override
     protected List<PageInfo> getPageContents() {
         return AppPageConfig.getInstance().getComponents();
     }
 
     @Override
-    public void onItemClick(View itemView, PageInfo widgetInfo, int pos) {
+    protected String getPageTitle() {
+        return "组件";
+    }
 
+    @Override
+    public void onItemClick(View itemView, PageInfo widgetInfo, int pos) {
 
         Intent intent = new Intent(getActivity(), ComponentsActivity.class);
         intent.putExtra("item_index",pos);

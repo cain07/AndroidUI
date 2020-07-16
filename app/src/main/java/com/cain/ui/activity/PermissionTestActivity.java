@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
-import com.cain.base.base.BaseActivity;
 import com.cain.ui.R;
+import com.cain.ui.base.BaseUIActivity;
 import com.xuexiang.xui.widget.toast.XToast;
 import com.zyq.easypermission.EasyPermission;
 import com.zyq.easypermission.EasyPermissionResult;
@@ -19,7 +19,7 @@ import java.util.List;
 
 import butterknife.BindView;
 
-public class PermissionTestActivity extends BaseActivity {
+public class PermissionTestActivity extends BaseUIActivity {
 
     private static final int RC_CODE_CALLPHONE = 1024;
 

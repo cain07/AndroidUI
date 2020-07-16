@@ -110,7 +110,7 @@ public abstract class BaseHomeFragment extends BaseFragment implements RecyclerV
     }
 
     public MainActivity getContainer() {
-        return (MainActivity) getActivity();
+        return null;
     }
 
     @Override

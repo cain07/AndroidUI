@@ -4,16 +4,17 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
-import com.cain.base.base.BaseActivity;
+import com.cain.ui.base.BaseUIActivity;
 import com.cain.ui.fragment.ComponentsFragment;
 import com.cain.ui.fragment.ExpandsFragment;
 import com.cain.ui.fragment.UtilitysFragment;
+import com.cain.util.sub.app.FragmentUtils;
 import com.google.android.material.tabs.TabLayout;
 
 import butterknife.BindView;
 
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends BaseUIActivity {
 
     private static final int POS_COMPONENTS = 0;
     private static final int POS_UTILITYS = 1;
@@ -64,20 +65,25 @@ public class MainActivity extends BaseActivity {
         expand.setIcon(R.drawable.selector_icon_tabbar_expand);
         mTabLayout.addTab(expand);
 
-        switchPage(ComponentsFragment.class);
+
+        ComponentsFragment componentsFragment = new ComponentsFragment();
+        UtilitysFragment utilitysFragment = new UtilitysFragment();
+        ExpandsFragment expandsFragment = new ExpandsFragment();
+
+        FragmentUtils.add(getSupportFragmentManager(),componentsFragment,R.id.fragment_container);
 
         mTabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 switch (tab.getPosition()) {
                     case POS_COMPONENTS:
-                        switchPage(ComponentsFragment.class);
+                        FragmentUtils.replace(getSupportFragmentManager(),componentsFragment,R.id.fragment_container);
                         break;
                     case 1:
-                        switchPage(UtilitysFragment.class);
+                        FragmentUtils.replace(getSupportFragmentManager(),utilitysFragment,R.id.fragment_container);
                         break;
                     case 2:
-                        switchPage(ExpandsFragment.class);
+                        FragmentUtils.replace(getSupportFragmentManager(),expandsFragment,R.id.fragment_container);
                         break;
                     default:
                         break;

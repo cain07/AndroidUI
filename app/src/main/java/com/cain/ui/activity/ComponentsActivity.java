@@ -2,13 +2,13 @@ package com.cain.ui.activity;
 
 import android.os.Bundle;
 
-import com.cain.base.base.BaseActivity;
 import com.cain.ui.R;
+import com.cain.ui.base.BaseUIActivity;
 import com.cain.ui.fragment.components.circle.CircleIndexFragment;
 import com.cain.ui.fragment.components.circle.CountProgressFragment;
 import com.cain.util.sub.app.FragmentUtils;
 
-public class ComponentsActivity extends BaseActivity {
+public class ComponentsActivity extends BaseUIActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
