@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_ff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="SparseArray 加载View" />
+
+        <TextView
+            android:id="@+id/tv_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            />
+
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="实现圆环倒计时" />
+
+        <Button
+            android:id="@+id/btn_3"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="圆形拍照_失败" />
+
+        <Button
+            android:id="@+id/btn_4"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="圆形拍照2" />
+
+
+        <Button
+            android:id="@+id/btn_5"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="圆形拍照layout" />
+
+    </LinearLayout>
+</LinearLayout>

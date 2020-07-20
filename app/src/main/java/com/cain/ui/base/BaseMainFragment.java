@@ -60,8 +60,6 @@ public abstract class BaseMainFragment extends BaseUIFragment implements Recycle
         });
     }
 
-
-
     /**
      * 进行排序
      *
